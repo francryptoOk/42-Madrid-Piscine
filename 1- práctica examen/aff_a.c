@@ -6,7 +6,7 @@
 /*   By: fsantill <fsantill@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/16 14:49:09 by fsantill          #+#    #+#             */
-/*   Updated: 2023/06/16 14:51:14 by fsantill         ###   ########.fr       */
+/*   Updated: 2023/06/22 19:00:28 by fsantill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	main(int argc,	char **argv)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (argc == 2)
@@ -24,7 +24,7 @@ int	main(int argc,	char **argv)
 			if (argv[1][i] == 'a')
 			{
 				write (1, "a", 1);
-				break;
+				break ;
 			}
 			i++;
 		}
@@ -34,6 +34,7 @@ int	main(int argc,	char **argv)
 		write(1, "a\n", 2);
 	return (0);
 }
+
 /* se prueba con:
  * ./aff_a "abc" | cat -e
  * a$
@@ -43,3 +44,4 @@ int	main(int argc,	char **argv)
  * $
  * ./aff_a | cat -e
  * a$
+*/
